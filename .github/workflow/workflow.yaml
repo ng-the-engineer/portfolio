@@ -1,0 +1,12 @@
+name: portfolio-workflow
+on: [push]
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "First command"
+        run: echo 'hello World'
+      - name: "Multi line comment"
+        run: |
+          node -v
+          npm -v
