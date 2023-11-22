@@ -13,3 +13,17 @@ pnpm dev
 # or
 bun dev
 ```
+
+1. Create next js app
+
+```
+npx create-next-app .
+```
+
+2. Create API route using next-connect and controller
+   app > api > certificates > route.ts
+   backend > controllers > certificateController.ts
+
+3. Create Mongoose model, Certificate, and data seeder
+
+4. Create db connection

@@ -1,10 +1,13 @@
 import { allCertificates } from "@/backend/controllers/certificatesController";
+import { connect } from "@/backend/persistence/mongodb";
 import { createEdgeRouter } from "next-connect";
 import { NextRequest } from "next/server";
 
 interface RequestContext {}
 
 const router = createEdgeRouter<NextRequest, RequestContext>();
+
+connect();
 
 router.get(allCertificates);
 
