@@ -10,3 +10,16 @@ jobs:
         run: |
           node -v
           npm -v
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Pull repo"
+        run: echo "git pull repo"
+      - name: "Run unit test"
+        run: echo "run jest tests"
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Security Scan"
+        run: echo "run security scans"
+    needs: ["run-shell-command", "unit-test"]
