@@ -12,6 +12,7 @@ const seedCertificates = async () => {
     console.log("All certificates are inserted");
   } catch (error) {
     console.log(error);
+  } finally {
     process.exit();
   }
 };

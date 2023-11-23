@@ -125,6 +125,6 @@ export const certificates = [
     certifiedExpired: null,
     certificateUrl: "",
     badgeUrl: "",
-    tags: ["development"],
+    tags: ["programming"],
   },
 ];
